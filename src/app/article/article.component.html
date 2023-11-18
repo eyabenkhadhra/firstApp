@@ -1,0 +1,95 @@
+<button>
+	<mat-icon>add</mat-icon>Create New</button>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+	<!--- Note that these columns can be defined in any order.
+					            The actuaal rendered columns are set as a property on the row definition" -->
+
+	<!-- Id Column -->
+		<ng-container matColumnDef="id1"> <th mat-header-cell *matHeaderCellDef>
+			ID.
+		</th>
+		<td mat-cell *matCellDef="let element">
+			{{element.id}}
+		</td>
+	</ng-container>
+
+
+	<!-- Cin Column -->
+	<ng-container matColumnDef="titre">
+		<th mat-header-cell *matHeaderCellDef>
+			Titre
+		</th>
+		<td mat-cell *matCellDef="let element">
+			{{element.titre}}
+		</td>
+	</ng-container>
+
+	<!-- Name Column -->
+	<ng-container matColumnDef="type">
+		<th mat-header-cell *matHeaderCellDef>
+			Type
+		</th>
+		<td mat-cell *matCellDef="let element">
+			{{element.type}}
+		</td>
+	</ng-container>
+
+	<!-- createdDate Column -->
+	<ng-container matColumnDef="dateApparition">
+		<th mat-header-cell *matHeaderCellDef>
+			date Apparition
+		</th>
+		<td mat-cell *matCellDef="let element">
+			{{element.dateApparition}}
+		</td>
+	</ng-container>
+
+	<!-- CV Column -->
+	<ng-container matColumnDef="sourcePdf">
+		<th mat-header-cell *matHeaderCellDef>
+			source Pdf
+		</th>
+		<td mat-cell *matCellDef="let element">
+			{{element.sourcePdf}}
+		</td>
+	</ng-container>
+	<!-- Type Column -->
+	<ng-container matColumnDef="auteur">
+		<th mat-header-cell *matHeaderCellDef>
+			Auteur
+		</th>
+		<td mat-cell *matCellDef="let element">
+			{{element.auteur}}
+		</td>
+	</ng-container>
+	<!-- Type Column -->
+
+	<ng-container matColumnDef="link">
+		<th mat-header-cell *matHeaderCellDef>
+			Link
+		</th>
+		<td mat-cell *matCellDef="let element">
+			{{element.link}}
+		</td>
+	</ng-container>
+
+	<ng-container matColumnDef="actions">
+		<th mat-header-cell *matHeaderCellDef></th>
+		<td mat-cell *matCellDef="let element">
+			<button type="submit">
+				<mat-icon>delete</mat-icon>
+			</button>
+
+			<button type="submit">
+				<mat-icon>edit</mat-icon>
+			</button>
+			<button routerLink="/{{element.id}}/affect">
+				<mat-icon>add_task</mat-icon>
+			</button>
+		</td>
+	</ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>

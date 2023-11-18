@@ -1,0 +1,26 @@
+<form [formGroup]="range" (ngSubmit)="onsub()">
+<mat-form-field appearance="fill">
+    <mat-label>Enter Your Title </mat-label>
+  <mat-form-field  appearance="fill">
+      
+      <input matInput   placeholder="Your title" formControlName="titre">
+     
+    </mat-form-field>
+    <mat-label>Enter a date range</mat-label>
+    <mat-date-range-input  [rangePicker]="picker">
+      <input matStartDate formControlName="dateDebut" placeholder="Start date">
+     
+      <input matEndDate formControlName="dateFin" placeholder="End date">
+    </mat-date-range-input>
+    <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+   
+
+  </mat-form-field>
+  
+  <p>Selected range: {{range.value | json}}</p>
+
+  <button type="submit">Sumbit</button>
+</form>
+  

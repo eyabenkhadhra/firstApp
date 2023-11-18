@@ -1,0 +1,84 @@
+{
+    "members": [
+        {
+            "id": "1234",
+            "cin": "11111111",
+            "name": "mariem",
+            "createdDate": "12/02/2000",
+            "cv": "lien",
+            "type": "teacher"
+        },
+        {
+            "id": "1434",
+            "cin": "11211111",
+            "name": "eya",
+            "createdDate": "12/02/2000",
+            "cv": "lien",
+            "type": "teacher"
+        },
+        {
+            "id": "1254",
+            "cin": "11115111",
+            "name": "fedy",
+            "createdDate": "12/02/2000",
+            "cv": "lien",
+            "type": "teacher"
+        }
+    ],
+    "articles": [
+        {
+            "id": "1234",
+            "titre": "TITRE1",
+            "type": "scientifique",
+            "dateApparition": "12/02/2000",
+            "sourcePdf": "lien",
+            "auteur": "",
+            "link": "DOI"
+        },
+        {
+            "id": "221",
+            "titre": "TITRE2",
+            "type": "mathematique",
+            "dateApparition": "12/02/2015",
+            "sourcePdf": "lien",
+            "auteur": "",
+            "link": "DOI"
+        },
+        {
+            "id": "22255",
+            "titre": "TITRE3",
+            "type": "politique",
+            "dateApparition": "12/02/2016",
+            "sourcePdf": "lien",
+            "auteur": "",
+            "link": "DOI"
+        }
+    ],
+    "events": [
+        {
+            "id": "11111",
+            "titre": "event1",
+            "dateDebut": "12/05/2000",
+            "dateFin": "12/09/2000"
+        },
+        {
+            "id": "8622",
+            "titre": "event2",
+            "dateDebut": "12/05/2000",
+            "dateFin": "12/09/2000"
+        },
+        {
+            "id": "2222",
+            "titre": "event3",
+            "dateDebut": "12/05/2000",
+            "dateFin": "12/09/2000"
+        }
+        
+    ],
+    "tools":[
+        {
+            "id":"155482",
+            "name":"exam"
+        }
+    ]
+}

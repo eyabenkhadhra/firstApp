@@ -1,0 +1,17 @@
+<form>
+    <h4>Selection un member</h4>
+    <mat-form-field appearance="fill">
+      <mat-label>Auteur</mat-label>
+      <mat-select [(ngModel)]="selectedValue" name="element">
+        <mat-option *ngFor="let element of tab" [value]="element.id">
+          {{element.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p> Selected Auteur: {{selectedValue}} </p>
+    <button (click)="affect(selectedValue)">
+        <mat-icon>OK</mat-icon>
+    </button>
+    
+  </form>
+  
